@@ -12,8 +12,11 @@ a {
   display: flex;
 }
 
-.navbar-alingment {
-  margin-left: -120px;
+.menu-header-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .menu-header .active {
