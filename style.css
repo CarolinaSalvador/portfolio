@@ -8,10 +8,22 @@ a {
   letter-spacing: 5px;
 }
 
-.navbar-alingment {
-  margin-left: -120px;
-
+.link-logo {
+  display: flex;
 }
+
+.menu-header-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.menu-header .active {
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
 .home {
   background-color: #9ed2ee;
   height: 90vh;
@@ -23,7 +35,6 @@ a {
   color: white;
   padding-top: 120px;
   padding-left: 100px;
-
 }
 
 .description {
@@ -34,10 +45,8 @@ a {
 }
 
 .my-work-arrow {
-
-padding-top: 180px;
-width: 200px
-
+  padding-top: 180px;
+  width: 200px;
 }
 
 main {
