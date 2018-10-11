@@ -1,5 +1,5 @@
 header {
-  height: 6vh;
+  height: 10vh;
 }
 
 a {
@@ -9,32 +9,35 @@ a {
 }
 
 .navbar-alingment {
-padding-left: 350px;
+  margin-left: -120px;
 
 }
 .home {
   background-color: #9ed2ee;
-  height: 94vh;
+  height: 90vh;
 }
 
 .hi {
   font-family: Montserrat;
-  font-size: 110px;
+  font-size: 80px;
   color: white;
-  padding-top: 90px;
+  padding-top: 120px;
+  padding-left: 100px;
 
 }
 
 .description {
-  font-size: 50px;
+  font-size: 40px;
   padding-top: 0px;
-  padding-left: 100px;
+  padding-left: 170px;
   letter-spacing: 2px;
 }
 
-.my-work {
-padding-top: 130px;
-padding-bottom: 50px;
+.my-work-arrow {
+
+padding-top: 180px;
+width: 200px
+
 }
 
 main {
