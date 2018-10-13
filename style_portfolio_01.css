@@ -1,0 +1,17 @@
+body {
+overflow-x: hidden;
+font-family: Muli, sans-serif;
+font-weight: normal;
+font-size: 16px;
+line-height: 1;
+background: #fff;
+color: #676a6a;
+font-weight: 300;
+}
+
+.container-fluid {
+
+  padding-right: 50px;
+  padding-left: 50px;
+
+}

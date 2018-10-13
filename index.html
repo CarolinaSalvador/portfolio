@@ -2,27 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link href="./normalize.css"         type="text/css" rel="stylesheet">
+  <link href="./normalize.css" type="text/css" rel="stylesheet">
   <link href="./bootstrap.css" type="text/css" rel="stylesheet">
-  <link href="./style.css"        type="text/css" rel="stylesheet">
+  <link href="./style.css" type="text/css" rel="stylesheet">
+
+
+  <script src="./jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="./bootstrap.js"></script>
+  <script src="main.js"></script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>portfolio</title>
 </head>
 
 <body>
+  <header class="d-flex flex-column justify-content-center sticky-top bg-white" id="homepage">
 
-  <header class="d-flex flex-column" id="homepage">
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-md navbar-light">
+      <a class="navbar-brand link-logo" href="#">
+        <img src="./imagenes_otras/CAROLINA SALVADOR.png" height="18" class="mx-3" alt="">
+      </a>
 
-      <img src="./imagenes_otras/CAROLINA SALVADOR.png" height="18" class="d-inline-block align-top mx-3" alt="">
-
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavDropdown"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse w-100" id="navbarNav">
-      <ul class="navbar-nav w-100 justify-content-center navbar-alingment">
+    <div class="collapse navbar-collapse w-100 menu-header-wrapper" id="navbarNav">
+      <ul class="navbar-nav w-100 justify-content-center navbar-alingment menu-header">
         <li class="nav-item ml-4">
           <a class="nav-link active" href="google.com">home</a>
         </li>
@@ -38,30 +46,83 @@
       </ul>
     </div>
   </nav>
+</header>
 
-  </header>
 
 <div class="home">
-  <div class="container d-flex flex-column justify-content-center" style="flex:auto;">
-      <span class="hi">HI!</span>
+  <div class="container yo-description d-flex flex-column justify-content-center">
 
-      <span class="hi description">My name is Carolina Salvador, I'm a<br>UX & UI designer based in Barcelona.</span>
+    <span class="hi">HI!</span>
 
+    <span class="hi description">My name is Carolina Salvador, I'm a UX & UI designer based in Barcelona.</span>
 
-
-    <a href="#main">
-        <img src="./imagenes_otras/my work.png" class="rounded mx-auto d-block img-fluid img-responsive my-work-arrow" width="100%" align="center" alt="My work">
-      </a>
-      </div
-    </div>
   </div>
 
+  <div class="my-work">
+    <a href="#main">
+      <img src="./imagenes_otras/my work.png" class="rounded mx-auto d-block img-fluid img-responsive my-work-arrow"
+      width="100%" align="center" alt="My work">
+    </a>
 
-  <main id="main">
-<div>
-    <img src="./imagenes_otras/borrar.png" class="img-fluid" width="120%" alt="My work">
+  </div>
+</div>
+
+<main class="main" id="main">
+  <div class="container">
+
+
+    <div class="row mt-50 mt-5 mb-5 element-left">
+      <div class="col-lg-6 col-md-4">
+      <img src="./imagenes_otras/main_picture_wellness_02.png" class="imagen-cuadrada img-project img-content" alt="Responsive image">
+
+      </div>
+
+
+      <div class="col-lg-6 col-md-4">
+        <div class="d-flex flex-column justify-content-center align-items-start contenido">
+          <h2 class="titulo-proyecto titulo-izquierda">Título proyecto</h2>
+          <h3 class="UX-UI">UX/UI Design</H3>
+          <p class="subtitulo-proyecto">Duis vel ligula non orci consectetur pharetra. Etiam dignissim lacus ut gravida commodo. Suspendisse risus justo, tempor in dolor in, elementum pulvinar libero.</p>
+          <button type="button" class="btn btn-warning .btn-lg  button-text">See more</button>
+        </div>
+      </div>
     </div>
-    <div></div>
+
+
+    <div class="row mt-50 mt-5 mb-5">
+      <div class="col-lg-6 col-md-4">
+        <div class="d-flex flex-column justify-content-center align-items-start contenido">
+          <h2 class="titulo-proyecto titulo-derecha">Título proyecto</h2>
+          <h3 class="UX-UI">UX/UI Design</H3>
+          <p class="subtitulo-proyecto">Duis vel ligula non orci consectetur pharetra. Etiam dignissim lacus ut gravida commodo. Suspendisse risus justo, tempor in dolor in, elementum pulvinar libero.</p>
+          <button type="button" class="btn btn-warning .btn-lg  button-text">See more</button>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-4 element-right">
+          <img src="./imagenes_otras/main_picture_wellness_02.png" class="imagen-cuadrada img-project img-content" alt="Responsive image">
+      </div>
+    </div>
+
+    <div class="row mt-50 mt-5 mb-5 element-left">
+      <div class="col-lg-6 col-md-4">
+          <img src="./imagenes_otras/main_picture_wellness_02.png" class="imagen-cuadrada img-project img-content" alt="Responsive image">
+      </div>
+
+      <div class="col-lg-6 col-md-4">
+        <div class="d-flex flex-column justify-content-center align-items-start contenido">
+          <h2 class="titulo-proyecto titulo-izquierda">Título proyecto</h2>
+          <h3 class="UX-UI">UX/UI Design</H3>
+          <p class="subtitulo-proyecto">Duis vel ligula non orci consectetur pharetra. Etiam dignissim lacus ut gravida commodo. Suspendisse risus justo, tempor in dolor in, elementum pulvinar libero.</p>
+          <button type="button" class="btn btn-warning .btn-lg  button-text">See more</button>
+        </div>
+      </div>
+    </div>
   </main>
 
-</body>
+
+
+
+  </body>
+
+  </html>

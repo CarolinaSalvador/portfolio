@@ -8,38 +8,161 @@ a {
   letter-spacing: 5px;
 }
 
-.navbar-alingment {
-  margin-left: -120px;
-
+.link-logo {
+  display: flex;
 }
+
+.menu-header-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.menu-header .active {
+  color: black;
+}
+
 .home {
   background-color: #9ed2ee;
   height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 1;
+}
+
+.yo-description {
+height: 80%;
+}
+
+.my-work {
+height: 20%;
+align-items: center;
+max-width: 200px;
+width: 40%;
 }
 
 .hi {
   font-family: Montserrat;
   font-size: 80px;
   color: white;
-  padding-top: 120px;
-  padding-left: 100px;
-
+  position: relative;
+  font-weight: bold;
 }
 
 .description {
   font-size: 40px;
-  padding-top: 0px;
-  padding-left: 170px;
+  letter-spacing: 2px;
+  position: relative;
+  left: 50px;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 600px) {
+  .hi {
+    font-size: 40px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+}
+
+.main {
+  height: 1500px;
+  background-color: #9ed2ee;
+  flex-direction: row;
+  padding-top: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.img-project {
+  height: 400px;
+  border: 2px;
+  border-color: black;
+}
+
+.titulo-proyecto {
+  font-family: Muli;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  color: white;
+  margin-top: 30px;
+}
+
+.subtitulo-proyecto {
+  color: white;
+  padding-top: 20px;
+  font-size: 20px;
   letter-spacing: 2px;
 }
 
-.my-work-arrow {
-
-padding-top: 180px;
-width: 200px
-
+.UX-UI {
+color: white;
+font-size: 24px;
+padding-top: 10px;
 }
 
-main {
-  height: 1000px;
+@media screen and (max-width: 1100px) {
+  .titulo-proyecto {
+    font-size: 30px;
+  }
+
+  .subtitulo-proyecto {
+    font-size: 16px;
+  }
+}
+
+.button-text {
+  color: white;
+  font-size: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+  border: none;
+}
+
+.image-display {
+  height: 100%;
+  display: block;
+}
+
+.imagen-cuadrada {
+  object-fit: cover;
+  display: block;
+}
+
+.contenido {
+  height: 100%;
+}
+
+.titulo-izquierda {
+  position: relative;
+  left: -240px;
+}
+
+.titulo-derecha {
+  position: relative;
+  z-index: 1000;
+  left: 200px;
+}
+
+.container-left {
+  margin-left: 100px;
+}
+
+.container {
+  position: relative;
+}
+
+.element-left {
+  margin-left: -100px;
+}
+
+.element-right {
+  right: -100px;
 }
